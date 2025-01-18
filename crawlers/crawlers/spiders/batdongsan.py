@@ -53,5 +53,5 @@ class BatdongsanSpider(scrapy.Spider):
         # Area extraction
         area_element = item.css('span.name-item::text').get()
         item_data['area'] = area_element.strip() if area_element else 'N/A'
-        #print(item_data)
+        print(item_data)
         return item_data
